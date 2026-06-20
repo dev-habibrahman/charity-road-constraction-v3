@@ -1,0 +1,100 @@
+<!doctype html>
+  <html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>طريق الخير — Tareeq Al-Khair</title>
+    <meta name="description" content="مبادرة غير ربحية لتمويل بناء وصيانة الطرق العامة">
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="container nav">
+        <a href="index.html" class="brand">
+          <span class="logo">★</span>
+          <span data-i18n="brand">طريق الخير</span>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="nav_home"></a>
+          <a href="projects.html" data-i18n="nav_projects"></a>
+          <a href="impact.html" data-i18n="nav_impact"></a>
+          <a href="about.html" data-i18n="nav_about"></a>
+        </nav>
+        <div class="nav-actions">
+          <button id="lang-btn" class="btn btn-ghost" data-i18n="lang_toggle"></button>
+          <a href="donate.html" class="btn btn-primary" data-i18n="nav_donate"></a>
+        </div>
+      </div>
+    </header>
+    <!-- hero -->
+    <section class="hero" style="padding:0">
+      <img src="assets/hero-road.jpg" alt="">
+      <div class="hero-inner">
+        <h1 data-i18n="hero_title"></h1>
+        <p data-i18n="hero_sub"></p>
+        <div class="hero-cta">
+          <a class="btn btn-gold" href="donate.html" data-i18n="cta_donate"></a>
+          <a class="btn btn-ghost" style="color:#fff;border-color:rgba(255,255,255,.4)" href="projects.html" data-i18n="cta_projects"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div class="live">
+        <div style="opacity:.7;font-size:.85rem"><span class="dot"></span><span data-i18n="live_title"></span></div>
+        <div class="big" id="live-amount">— ر.س</div>
+        <div style="opacity:.7;font-size:.85rem;margin-top:4px" data-i18n="live_today"></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div style="text-align:center; max-width:680px; margin:0 auto 32px; margin-top: 50px;">
+        <h2 data-i18n="mission_title"></h2>
+        <p class="lead" style="margin:0 auto" data-i18n="mission_body"></p>
+      </div>
+      <div class="grid grid-4">
+        <div class="card stat"><div class="num" data-fmt="86"></div><div class="label" data-i18n="stats_km"></div></div>
+        <div class="card stat"><div class="num" data-fmt="24"></div><div class="label" data-i18n="stats_villages"></div></div>
+        <div class="card stat"><div class="num" data-fmt="3120"></div><div class="label" data-i18n="stats_donors"></div></div>
+        <div class="card stat"><div class="num" data-fmt="4280000"></div><div class="label" data-i18n="stats_raised"></div></div>
+      </div>
+    </section>
+
+    <section class="container">
+      <div style="text-align:center; display:flex;align-items:center;justify-content:space-between; margin-bottom:20px;flex-wrap:wrap;gap:12px; margin-top: 50px; ">
+        <h2 style="margin:0" data-i18n="projects_title"></h2>
+        <a class="btn btn-ghost" href="projects.html" data-i18n="view_all"></a>
+      </div>
+      <div class="grid grid-3" id="projects-grid"></div>
+    </section>
+    <footer>
+      <div class="container">
+        <div>
+          <div class="brand" style="color:#fff;margin-bottom:8px">
+            <span class="logo">★</span>
+            <span data-i18n="brand"></span>
+          </div>
+          <p style="color:rgba(247,241,225,.7);font-size:.85rem" data-i18n="tagline"></p>
+        </div>
+        <div>
+          <h4 data-i18n="nav_projects"></h4>
+          <a href="projects.html" data-i18n="view_all"></a>
+          <a href="about.html" data-i18n="nav_about"></a>
+          <a href="impact.html" data-i18n="nav_impact"></a>
+          <a href="donate.html" data-i18n="nav_donate"></a>
+        </div>
+        <div>
+          <h4 data-i18n="brand"></h4>
+          <p style="color:rgba(247,241,225,.7);font-size:.85rem" data-i18n="footer_about"></p>
+        </div>
+      </div>
+      <div class="copy" data-i18n="footer_rights"></div>
+    </footer>
+    <script src="app.js"></script>
+  </body>
+</html>
